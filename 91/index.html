@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>91 chinese homemade video - 中文自制视频精选与深度解析</title>
+  <meta name="description" content="91 chinese homemade video 汇聚中文自制视频的精选条目、最新动态、分类入口与深度解析，涵盖生活记录、剧情短片、手工制作等方向，适合喜欢真实创作与多元表达的观众。">
+  <meta name="keywords" content="91 chinese homemade video">
+  <style>
+    /* ---------- 全局变量 ---------- */
+    :root {
+      --brand: #b83b2f;
+      --brand-light: #e05a4a;
+      --brand-dark: #8a2a20;
+      --bg: #fcf8f5;
+      --surface: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #5a5a5a;
+      --text-tertiary: #8a8a8a;
+      --line: #ede3dd;
+      --radius-card: 16px;
+      --radius-btn: 28px;
+      --radius-tag: 20px;
+      --radius-banner: 12px;
+      --shadow-default: 0 4px 14px rgba(0,0,0,0.04);
+      --shadow-hover: 0 10px 24px rgba(0,0,0,0.08);
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      --max-width: 1360px;
+      --header-height: 64px;
+      --announce-height: 40px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--announce-height) + var(--header-height) + 12px);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---------- 吸顶公告条 + 页头 ---------- */
+    .sticky-top {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: var(--surface);
+      box-shadow: 0 1px 0 var(--line);
+    }
+
+    .announce-bar {
+      height: var(--announce-height);
+      background-color: var(--brand-dark);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      font-size: 13px;
+      gap: 28px;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+    .announce-bar::-webkit-scrollbar { display: none; }
+    .announce-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .announce-bar .badge {
+      background-color: rgba(255,255,255,0.2);
+      padding: 0 8px;
+      border-radius: 10px;
+      font-size: 11px;
+      line-height: 18px;
+      font-weight: 600;
+    }
+    .announce-bar .brand-mark {
+      font-weight: 700;
+      color: #ffd8c8;
+      letter-spacing: 0.3px;
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    .header-main {
+      height: var(--header-height);
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      gap: 40px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background-color: var(--brand);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 1;
+    }
+    .logo-text {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--brand-dark);
+      letter-spacing: -0.3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 6px;
+      list-style: none;
+      flex: 1;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-links a:hover {
+      background-color: var(--line);
+      color: var(--text-primary);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--line);
+      padding: 6px 16px;
+      border-radius: var(--radius-btn);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-outline:hover {
+      background-color: var(--bg);
+      border-color: var(--brand-light);
+      color: var(--brand-dark);
+    }
+
+    .btn-primary {
+      background-color: var(--brand);
+      border: none;
+      padding: 6px 20px;
+      border-radius: var(--radius-btn);
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover {
+      background-color: var(--brand-dark);
+    }
+
+    /* 汉堡按钮（移动端） */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--text-primary);
+      padding: 4px;
+      line-height: 1;
+      border-radius: 6px;
+    }
+    .menu-toggle:focus-visible {
+      outline: 2px solid var(--brand);
+    }
+
+    /* ---------- 容器 / 三栏门户 ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .portal-grid {
+      display: grid;
+      grid-template-columns: 180px 1fr 260px;
+      gap: 28px;
+      align-items: start;
+      padding: 28px 0 48px;
+    }
+
+    /* 左频道索引 */
+    .channel-sidebar {
+      position: sticky;
+      top: calc(var(--announce-height) + var(--header-height) + 16px);
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 18px 12px;
+      box-shadow: var(--shadow-default);
+    }
+    .channel-sidebar h2 {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0 8px 10px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 10px;
+    }
+    .channel-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .channel-list a {
+      display: block;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .channel-list a:hover {
+      background: var(--bg);
+      color: var(--brand-dark);
+    }
+    .channel-list a.active {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    /* 中栏主内容 */
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      min-width: 0;
+    }
+
+    /* 右辅助栏 */
+    .secondary-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      position: sticky;
+      top: calc(var(--announce-height) + var(--header-height) + 16px);
+    }
+    .side-card {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 20px 18px;
+      box-shadow: var(--shadow-default);
+    }
+    .side-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .side-card h3::before {
+      content: '';
+      width: 4px;
+      height: 16px;
+      background: var(--brand);
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .hot-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .hot-list li {
+      display: flex;
+      gap: 10px;
+      font-size: 13px;
+      line-height: 1.5;
+      align-items: flex-start;
+    }
+    .hot-list .rank {
+      font-weight: 700;
+      color: var(--brand);
+      font-size: 14px;
+      min-width: 20px;
+      flex-shrink: 0;
+    }
+    .hot-list .hot-title {
+      color: var(--text-primary);
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .hot-list .hot-title:hover {
+      color: var(--brand);
+    }
+    .hot-list .hot-meta {
+      display: block;
+      font-size: 11px;
+      color: var(--text-tertiary);
+      margin-top: 2px;
+    }
+
+    /* 首屏区域 */
+    .hero {
+      background: linear-gradient(145deg, #fff5f0 0%, #fde8e0 100%);
+      border-radius: 24px;
+      padding: 40px 36px 36px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+    }
+    .hero-content {
+      flex: 1 1 300px;
+      position: relative;
+      z-index: 2;
+      min-width: 0;
+    }
+    .hero-content .kicker {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--brand);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .hero-content h1 {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    .hero-desc {
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .hero-stats .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-stats .stat-num {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--brand-dark);
+      line-height: 1.2;
+    }
+    .hero-stats .stat-label {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      font-weight: 500;
+    }
+    .hero-visual {
+      flex: 1 1 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      min-width: 160px;
+    }
+    .hero-visual svg {
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      filter: drop-shadow(0 8px 16px rgba(184,59,47,0.15));
+    }
+
+    /* 板块通用标题 */
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .section-header h2 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.3px;
+    }
+    .section-header .more-link {
+      font-size: 13px;
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .section-header .more-link:hover {
+      text-decoration: underline;
+    }
+
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 18px;
+    }
+    .video-card {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      box-shadow: var(--shadow-default);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .video-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    .video-card img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      background: var(--line);
+    }
+    .card-body {
+      padding: 14px 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+    .card-tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--brand);
+      background: #fef0ec;
+      padding: 2px 8px;
+      border-radius: var(--radius-tag);
+      display: inline-block;
+      align-self: flex-start;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--text-primary);
+    }
+    .card-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--text-tertiary);
+      margin-top: auto;
+      padding-top: 6px;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 2px;
+    }
+    .card-tags span {
+      font-size: 10px;
+      color: var(--text-tertiary);
+      background: var(--bg);
+      padding: 1px 7px;
+      border-radius: 10px;
+    }
+
+    /* 最新更新列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .update-item {
+      background: var(--surface);
+      border-radius: 14px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow-default);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .update-item .date-badge {
+      background: var(--brand);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 8px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .update-item .update-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .update-item .update-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 3px;
+    }
+    .update-item .update-summary {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .category-chip {
+      background: var(--surface);
+      border-radius: 14px;
+      padding: 18px 12px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: var(--shadow-default);
+      transition: background 0.2s, transform 0.2s;
+      border: 1px solid transparent;
+    }
+    .category-chip:hover {
+      background: #fef0ec;
+      border-color: var(--brand-light);
+      transform: translateY(-2px);
+    }
+    .category-chip .cat-sub {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--text-tertiary);
+      margin-top: 3px;
+    }
+
+    /* 深度解析 */
+    .deep-dive {
+      background: var(--surface);
+      border-radius: 20px;
+      padding: 28px 28px 32px;
+      box-shadow: var(--shadow-default);
+    }
+    .deep-dive h2 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+    .deep-dive h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 22px 0 8px;
+      color: var(--brand-dark);
+    }
+    .deep-dive p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .deep-dive ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    .deep-dive li {
+      margin-bottom: 4px;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    details {
+      background: var(--surface);
+      border-radius: 14px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow-default);
+      cursor: pointer;
+    }
+    summary {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text-primary);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '＋';
+      font-weight: 400;
+      font-size: 18px;
+      color: var(--brand);
+      transition: transform 0.2s;
+    }
+    details[open] summary::after {
+      content: '－';
+    }
+    details p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* 评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 14px;
+    }
+    .comment-card {
+      background: var(--surface);
+      border-radius: 14px;
+      padding: 16px 16px 14px;
+      box-shadow: var(--shadow-default);
+    }
+    .comment-user {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      flex-shrink: 0;
+    }
+    .comment-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .comment-text {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* 相关资讯 */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .news-item {
+      background: var(--surface);
+      border-radius: 14px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow-default);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .news-item img {
+      width: 72px;
+      height: 72px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: var(--line);
+    }
+    .news-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .news-date {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      font-weight: 500;
+    }
+    .news-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 2px 0 4px;
+    }
+    .news-summary {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* 相关推荐 标签索引 */
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag-cloud a {
+      background: var(--surface);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      box-shadow: var(--shadow-default);
+      transition: background 0.2s, color 0.2s;
+    }
+    .tag-cloud a:hover {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    /* 补充板块：创作者证言 / 时间线 */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .testimonial {
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: var(--shadow-default);
+      border-left: 4px solid var(--brand);
+    }
+    .testimonial p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-style: italic;
+    }
+    .testimonial .author {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--brand-dark);
+      margin-top: 10px;
+    }
+
+    /* 页尾 */
+    .site-footer {
+      background: #1e1715;
+      color: rgba(255,255,255,0.75);
+      padding: 48px 0 32px;
+      margin-top: 16px;
+    }
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 32px;
+    }
+    .footer-brand {
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .footer-desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.6);
+      max-width: 300px;
+    }
+    .footer-col h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .footer-col a {
+      display: block;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 13px;
+      margin-bottom: 8px;
+      transition: color 0.2s;
+    }
+    .footer-col a:hover {
+      color: #ffb4a2;
+    }
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 32px auto 0;
+      padding: 16px 24px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* 回到顶部 */
+    .back-to-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: var(--shadow-hover);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 200;
+      transition: background 0.2s;
+    }
+    .back-to-top:hover {
+      background: var(--brand-dark);
+    }
+    .back-to-top.visible {
+      display: flex;
+    }
+
+    /* 响应式 */
+    @media (max-width: 1024px) {
+      .portal-grid {
+        grid-template-columns: 1fr 240px;
+      }
+      .channel-sidebar {
+        display: none;
+      }
+      .nav-links {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .header-main {
+        gap: 16px;
+      }
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+      .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 740px) {
+      .portal-grid {
+        grid-template-columns: 1fr;
+      }
+      .secondary-sidebar {
+        position: static;
+      }
+      .hero {
+        padding: 28px 20px;
+      }
+      .hero-content h1 {
+        font-size: 26px;
+      }
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .card-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .comment-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .announce-bar {
+        gap: 16px;
+        font-size: 12px;
+      }
+      .header-actions .btn-outline {
+        display: none;
+      }
+      .news-item img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-stats {
+        gap: 16px;
+      }
+    }
+
+    /* 移动端导航抽屉（简单实现） */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: calc(var(--announce-height) + var(--header-height));
+      left: 0;
+      right: 0;
+      background: var(--surface);
+      box-shadow: 0 16px 32px rgba(0,0,0,0.1);
+      padding: 16px 24px;
+      z-index: 99;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .mobile-nav.open {
+      display: flex;
+    }
+    .mobile-nav a {
+      padding: 10px 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 15px;
+    }
+    .mobile-nav a:hover {
+      background: var(--bg);
+    }
+    .mobile-nav .close-nav {
+      align-self: flex-end;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: var(--text-tertiary);
+      margin-bottom: 8px;
+    }
+    /* 遮罩 */
+    .overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+      z-index: 98;
+    }
+    .overlay.open {
+      display: block;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+  <!-- 吸顶公告条 + 页头 -->
+  <div class="sticky-top">
+    <div class="announce-bar">
+      <span class="brand-mark">91 chinese homemade video</span>
+      <span><span class="badge">NEW</span> 11月7日 · 剧情短片《归途2026》上线</span>
+      <span><span class="badge">榜单</span> 本周生活记录类播放量突破 2400 万</span>
+      <span><span class="badge">更新</span> 手工制作《竹编灯罩》第 3 集已发布</span>
+    </div>
+    <header class="header-main">
+      <div class="logo-area">
+        <div class="logo-icon">91</div>
+        <span class="logo-text">91 chinese homemade video</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#overview">领域概览</a></li>
+        <li><a href="#featured">精选推荐</a></li>
+        <li><a href="#latest">最新动态</a></li>
+        <li><a href="#categories">分类入口</a></li>
+        <li><a href="#deep-dive">深度解析</a></li>
+        <li><a href="#guide">体验指南</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#comments">用户评论</a></li>
+      </ul>
+      <div class="header-actions">
+        <button class="btn-outline" onclick="document.getElementById('search-input')?.focus()">搜索</button>
+        <button class="btn-primary" onclick="alert('投稿入口示例：上传你的自制视频作品')">投稿</button>
+      </div>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" id="menuToggle">☰</button>
+    </header>
+  </div>
+
+  <!-- 移动端导航抽屉 -->
+  <div class="overlay" id="overlay"></div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="移动端导航">
+    <button class="close-nav" aria-label="关闭菜单" id="closeNav">✕</button>
+    <a href="#overview">领域概览</a>
+    <a href="#featured">精选推荐</a>
+    <a href="#latest">最新动态</a>
+    <a href="#categories">分类入口</a>
+    <a href="#deep-dive">深度解析</a>
+    <a href="#guide">体验指南</a>
+    <a href="#faq">常见问题</a>
+    <a href="#comments">用户评论</a>
+    <a href="#news">相关资讯</a>
+    <a href="#tags">相关推荐</a>
+  </nav>
+
+  <!-- 主容器 -->
+  <div class="container">
+    <div class="portal-grid">
+
+      <!-- 左频道索引 -->
+      <aside class="channel-sidebar">
+        <h2>频道索引</h2>
+        <ul class="channel-list">
+          <li><a href="#overview" class="active">领域概览</a></li>
+          <li><a href="#featured">生活记录</a></li>
+          <li><a href="#featured">剧情短片</a></li>
+          <li><a href="#featured">手工制作</a></li>
+          <li><a href="#featured">美食烹饪</a></li>
+          <li><a href="#featured">旅行见闻</a></li>
+          <li><a href="#featured">宠物日常</a></li>
+          <li><a href="#featured">才艺展示</a></li>
+          <li><a href="#latest">最新更新</a></li>
+          <li><a href="#categories">全部分类</a></li>
+        </ul>
+      </aside>
+
+      <!-- 中栏主内容 -->
+      <div class="main-content">
+
+        <!-- 首屏 -->
+        <section class="hero">
+          <div class="hero-content">
+            <div class="kicker">自制视频 · 真实表达</div>
+            <h1>91 chinese homemade video</h1>
+            <p class="hero-desc">汇聚中文自制视频的多元内容：从日常记录、剧情短片到手工制作与美食烹饪，这里有创作者一手拍摄、剪辑和分享的真实作品。</p>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-num">1,280+</span>
+                <span class="stat-label">精选条目</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">42</span>
+                <span class="stat-label">本周新增</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">11月7日</span>
+                <span class="stat-label">最近更新</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="20" y="30" width="120" height="80" rx="12" fill="#fde8e0" stroke="#b83b2f" stroke-width="2"/>
+              <circle cx="80" cy="70" r="22" fill="#b83b2f" opacity="0.9"/>
+              <polygon points="74,60 74,80 90,70" fill="#ffffff"/>
+              <rect x="100" y="100" width="80" height="10" rx="5" fill="#e05a4a" opacity="0.5"/>
+              <rect x="100" y="116" width="50" height="8" rx="4" fill="#b83b2f" opacity="0.3"/>
+              <circle cx="160" cy="45" r="16" fill="#e05a4a" opacity="0.2"/>
+            </svg>
+          </div>
+        </section>
+
+        <!-- 板块1：主题领域概览 -->
+        <section id="overview">
+          <div class="section-header">
+            <h2>中文自制视频领域概览</h2>
+          </div>
+          <div class="deep-dive" style="padding: 24px 28px;">
+            <p>中文自制视频涵盖的范围远比“随手拍”宽泛。从形态上看，至少包括生活流水账式记录、有剧本的剧情短片、手工制作过程展示、美食烹饪教学、旅行见闻 vlog 以及宠物日常等方向。创作者用手机或入门相机完成拍摄，剪辑软件也从专业工具扩展到手机端的剪映、CapCut 等，制作门槛的降低让内容供给变得极其丰富。</p>
+            <p>以 2026 年 11 月第一周的数据为参照，生活记录类在播放量上占据绝对优势，单周排名前 20 的条目中占了 11 席。剧情短片虽然数量少，但互动率（评论、转发）普遍高于其他类型，一个 3 分钟以内的短片如果叙事完整，评论量常常是同等播放量生活记录的 2 到 3 倍。手工制作和美食烹饪则呈现明显的“收藏高于点赞”特征，观众更倾向于把实用内容存下来反复看。</p>
+            <p>值得注意的细分趋势是“无解说沉浸式”内容的增加。从 10 月中旬到 11 月初，带“沉浸”“无解说”标签的新增条目数量环比上升了约 34%，主要集中在手工制作和美食烹饪两个类别。这类内容对画面和收音的要求更高，但完播率通常比带解说的版本高出 15 到 20 个百分点。另一条线是“系列化短剧”，5 到 8 集、每集 2 分钟左右的微短剧在 10 月下旬集中上线，其中《合租日记》第一季 6 集在 11 月 3 日完结，累计播放量突破 180 万。</p>
+          </div>
+        </section>
+
+        <!-- 板块2：精选内容推荐 -->
+        <section id="featured">
+          <div class="section-header">
+            <h2>精选自制视频条目</h2>
+            <a href="#latest" class="more-link">查看全部更新 →</a>
+          </div>
+          <div class="card-grid">
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/homemade1/400/300" alt="剧情短片《归途2026》剧照" width="400" height="300" loading="lazy">
+              <div class="card-body">
+                <span class="card-tag">剧情短片</span>
+                <h3 class="card-title">归途2026</h3>
+                <p class="card-desc">一个关于春节返乡的 8 分钟短片，全程用一台二手微单拍摄，讲述三代人在火车站重逢的半小时。</p>
+                <div class="card-tags"><span>返乡</span><span>家庭</span><span>微单拍摄</span></div>
+                <div class="card-meta"><span>评分 8.7</span><span>11月7日更新</span></div>
+              </div>
+            </article>
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/homemade2/400/300" alt="手工制作竹编灯罩过程" width="400" height="300" loading="lazy">
+              <div class="card-body">
+                <span class="card-tag">手工制作</span>
+                <h3 class="card-title">竹编灯罩：从破篾到成形</h3>
+                <p class="card-desc">四川泸州的手艺人老陈用 4 集视频完整记录一只竹编灯罩的诞生，本集聚焦破篾与编织底座。</p>
+                <div class="card-tags"><span>竹编</span><span>手艺人</span><span>无解说</span></div>
+                <div class="card-meta"><span>收藏 2.1k</span><span>11月6日更新</span></div>
+              </div>
+            </article>
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/homemade3/400/300" alt="美食烹饪视频封面" width="400" height="300" loading="lazy">
+              <div class="card-body">
+                <span class="card-tag">美食烹饪</span>
+                <h3 class="card-title">一人食·砂锅焗鸡腿</h3>
+                <p class="card-desc">从腌料到火候全程展示，没有旁白，只有锅里的声音。适合下班后想快速做一顿饭的人。</p>
+                <div class="card-tags"><span>一人食</span><span>砂锅</span><span>沉浸式</span></div>
+                <div class="card-meta"><span>评分 8.2</span><span>11月5日更新</span></div>
+              </div>
+            </article>
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/homemade4/400/300" alt="生活记录视频截图" width="400" height="300" loading="lazy">
+              <div class="card-body">
+                <span class="card-tag">生活记录</span>
+                <h3 class="card-title">在县城开书店的第 47 天</h3>
+                <p class="card-desc">店主小鹿记录书店从装修到试营业的全过程，本集讲如何用 3000 元搭出一面书墙。</p>
+                <div class="card-tags"><span>县城</span><span>书店</span><span>创业</span></div>
+                <div class="card-meta"><span>播放 12.4w</span><span>11月4日更新</span></div>
+              </div>
+            </article>
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/homemade5/400/300" alt="旅行见闻视频封面" width="400" height="300" loading="lazy">
+              <div class="card-body">
+                <span class="card-tag">旅行见闻</span>
+                <h3 class="card-title">骑行滇藏线：第 12 天到第 15 天</h3>
+                <p class="card-desc">从飞来寺到盐井，记录海拔 3400 米到 2400 米之间的天气变化和路面状况，附带每日花费清单。</p>
+                <div class="card-tags"><span>滇藏线</span><span>骑行</span><span>路书</span></div>
+                <div class="card-meta"><span>评分 8.5</span><span>11月3日更新</span></div>
+              </div>
+            </article>
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/homemade6/400/300" alt="宠物日常视频封面" width="400" height="300" loading="lazy">
+              <div class="card-body">
+                <span class="card-tag">宠物日常</span>
+                <h3 class="card-title">橘猫“年糕”学会开门之后</h3>
+                <p class="card-desc">一只 3 岁的橘猫用 6 天时间学会了压门把手，从此家里没有关得住的房间。本期有 14 个机位。</p>
+                <div class="card-tags"><span>橘猫</span><span>行为记录</span><span>多机位</span></div>
+                <div class="card-meta"><span>点赞 3.8k</span><span>11月2日更新</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 板块3：最新更新动态 -->
+        <section id="latest">
+          <div class="section-header">
+            <h2>最新更新与热播动态</h2>
+          </div>
+          <div class="update-list">
+            <div class="update-item">
+              <span class="date-badge">11-07</span>
+              <div class="update-content">
+                <div class="update-title">剧情短片《归途2026》正式上线</div>
+                <div class="update-summary">导演阿凯在微博同步发布拍摄手记，提到全片只用了两个场景、三位演员，后期调色耗时两周。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="date-badge">11-07</span>
+              <div class="update-content">
+                <div class="update-title">《竹编灯罩》第 3 集发布</div>
+                <div class="update-summary">本集展示“收口”步骤，老陈在视频简介里附上了篾条宽度尺寸——主篾 1.2 毫米、纬篾 0.8 毫米。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="date-badge">11-06</span>
+              <div class="update-content">
+                <div class="update-title">《合租日记》第一季完结</div>
+                <div class="update-summary">6 集总播放量 182 万，最后一集评论区讨论最多的是第 4 集里“谁该洗碗”的长镜头。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="date-badge">11-05</span>
+              <div class="update-content">
+                <div class="update-title">“沉浸式烹饪”合集新增 9 条</div>
+                <div class="update-summary">过去三天，带“沉浸式”标签的烹饪视频新增 9 条，平均时长 4 分 20 秒，最高一条播放 47 万。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="date-badge">11-04</span>
+              <div class="update-content">
+                <div class="update-title">滇藏线骑行系列更新至第 15 天</div>
+                <div class="update-summary">作者在视频里贴出了盐井到芒康的住宿价格：床位 45 元、标间 120 元，比 10 月上涨约 20%。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="date-badge">11-03</span>
+              <div class="update-content">
+                <div class="update-title">橘猫“年糕”开门视频登上宠物榜第一</div>
+                <div class="update-summary">视频发布 48 小时内点赞 3.8k，转发 620 次，评论区有人晒出自家猫学会开冰箱的同类记录。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="date-badge">11-02</span>
+              <div class="update-content">
+                <div class="update-title">县城书店记录系列更新第 47 天</div>
+                <div class="update-summary">书墙搭建实际花费 2860 元，比预算少 140 元，店主列出了板材、角铁和油漆的单价。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="date-badge">10-31</span>
+              <div class="update-content">
+                <div class="update-title">手工区上线“工具评测”新合集</div>
+                <div class="update-summary">首批收录 6 条手动工具对比视频，涉及刨刀、凿子和手锯，单条时长 6 到 12 分钟。</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 板块4：分类入口 -->
+        <section id="categories">
+          <div class="section-header">
+            <h2>按类型浏览</h2>
+          </div>
+          <div class="category-grid">
+            <a href="#featured" class="category-chip">生活记录<span class="cat-sub">日常 vlog</span></a>
+            <a href="#featured" class="category-chip">剧情短片<span class="cat-sub">微短剧</span></a>
+            <a href="#featured" class="category-chip">手工制作<span class="cat-sub">木工·竹编</span></a>
+            <a href="#featured" class="category-chip">美食烹饪<span class="cat-sub">家常菜</span></a>
+            <a href="#featured" class="category-chip">旅行见闻<span class="cat-sub">骑行·徒步</span></a>
+            <a href="#featured" class="category-chip">宠物日常<span class="cat-sub">猫狗记录</span></a>
+            <a href="#featured" class="category-chip">才艺展示<span class="cat-sub">音乐·绘画</span></a>
+            <a href="#featured" class="category-chip">沉浸式<span class="cat-sub">无解说</span></a>
+          </div>
+        </section>
+
+        <!-- 板块5：深度解析 -->
+        <section id="deep-dive">
+          <div class="section-header">
+            <h2>深度解析：自制视频的类型差异与判断依据</h2>
+          </div>
+          <div class="deep-dive">
+            <h3>生活记录与剧情短片的投入产出逻辑完全不同</h3>
+            <p>生活记录类视频的核心成本是时间。以“在县城开书店”系列为例，创作者小鹿从 9 月 20 日试营业开始，每天拍摄素材约 40 分钟，一周剪辑一次，单条成片 6 到 8 分钟。这类内容的优势是可持续——只要生活继续，素材就不会断。但劣势也很明显：单条视频的信息密度低，观众对“第 47 天”之后的期待值会逐渐下降。数据上，该系列第 1 集播放 18.2 万，第 10 集 15.7 万，第 30 集降到 9.4 万，第 47 集回升到 12.4 万——回升的原因是那集讲了“3000 元搭书墙”的实用内容。</p>
+            <p>剧情短片则相反。阿凯的《归途2026》实际拍摄只用了 3 天，但前期写剧本改了 11 稿，后期调色花了 2 周，总制作周期接近两个月。单条投入远高于生活记录，但一部 8 分钟的短片可以带来持续的品牌效应——阿凯在视频简介里挂了自己的公众号，三天内涨了 1200 个关注。</p>
+
+            <h3>判断一个自制视频值不值得看，先看它的“信息锚点”在哪里</h3>
+            <p>“信息锚点”指的是这条视频里有没有一个明确可记住的东西：一个步骤、一个价格、一个地点、一个情绪转折点。竹编灯罩第 3 集的信息锚点是“收口时纬篾要泡水 3 分钟再编”，滇藏线第 12 天的锚点是“飞来寺到盐井的 78 公里里有 34 公里碎石路”。有锚点的视频，观众看完能复述出一件事；没有锚点的视频，看完只记得“还行”。</p>
+            <p>对照两组数据：11 月第一周播放量前 20 的生活记录里，有 14 条在标题或简介中出现了具体数字（天数、金额、公里数、件数），这 14 条的平均完播率是 41%；另外 6 条没有数字的，平均完播率 27%。差异的关键在于数字给了观众一个“预期框架”，知道这条视频大概要花多少时间、能得到什么。</p>
+
+            <h3>系列化微短剧的节奏问题集中在第 3 到第 4 集</h3>
+            <p>《合租日记》第一季 6 集，单集时长从 1 分 50 秒到 2 分 40 秒不等。根据评论区反馈统计，第 3 集“谁用了我的洗发水”和第 4 集“洗碗排班表”的讨论量最高，但第 4 集的“弃剧”评论也最多——有 23 条评论明确说“从第 4 集开始快进”。原因不复杂：第 3 集建立了“洗发水”这个冲突点，第 4 集没有推进，而是换成了另一个生活摩擦，观众对“每集一个独立矛盾”的结构产生了疲劳。</p>
+            <p>对比另一部微短剧《夜班便利店》第一季 5 集，它用第 3 集把前两集的伏笔收拢，第 4 集直接进入新场景，弃剧评论只有 7 条。差别在于有没有一条贯穿的线索。《合租日记》的线索是“合租关系”，但每集都在换矛盾；《夜班便利店》的线索是“便利店夜班店员遇到的同一批客人”，每个客人都在推进主线。观众要的是“下一集能看到上一集的延续”，而不是“下一集又是一个新麻烦”。</p>
+
+            <h3>手工与美食类的“可复制性”决定收藏量</h3>
+            <p>竹编灯罩第 3 集收藏 2.1k，点赞 1.8k，收藏高于点赞。砂锅焗鸡腿收藏 3.4k，点赞 2.9k，同样是收藏更高。这两类内容的共同点是“看完之后想自己试”。可复制性的高低取决于三个要素：工具是否常见、步骤是否完整、失败风险是否低。竹编灯罩的工具是篾刀和手，步骤完整但失败风险高（破篾容易断），所以评论区一半在问“新手用什么篾条不容易断”。砂锅焗鸡腿的工具是砂锅和烤箱，步骤只有 5 步，失败风险低，评论区的方向是“交作业”。</p>
+            <p>反过来看，滇藏线骑行系列的收藏量只有 860，点赞 2.2k，收藏明显低于点赞。原因在于可复制性低——观众知道自己不会去骑滇藏线，但愿意为风景和故事点赞。收藏量高的内容，往往对应一个观众“认为自己以后可能会做”的动作。</p>
+          </div>
+        </section>
+
+        <!-- 板块6：体验指南 / 消费路径 -->
+        <section id="guide">
+          <div class="section-header">
+            <h2>观看与判断路径</h2>
+          </div>
+          <div class="deep-dive" style="padding: 24px 28px;">
+            <p>打开一条自制视频，前 15 秒决定要不要继续。对于生活记录，先看标题里有没有具体天数或数字——“第 47 天”“3000 元”这种，有数字的通常比“我的日常”信息量大。对于剧情短片，先看简介里的时长和集数，超过 10 分钟的短片如果没有分集，节奏容易散。手工和美食类，直接拉到步骤展示的段落，看有没有标注具体尺寸或用量——没有尺寸的手工教程基本没法跟做。</p>
+            <p>比较两条同类视频时，看评论区。评论里具体提到“第几分钟”“那个尺寸”“步骤三”的，说明观众真的在跟做或认真看；评论里只有“好棒”“喜欢”的，视频的信息密度通常不高。另一个判断依据是更新频率：生活记录类每周一更的创作者，内容往往比日更的质量稳定；剧情短片类两个月出一部的，通常比一个月出三部的前期打磨更充分。</p>
+            <p>如果目标是学一项技能，优先选“系列化”而不是“单条合集”。竹编灯罩分了 4 集，每集聚焦一个步骤，这种结构比一条 20 分钟讲完全部的视频更容易跟上。美食烹饪类相反，单条 5 分钟以内的成功率更高——砂锅焗鸡腿只有一条 6 分钟的视频，步骤清晰，评论区交作业的比例明显高于那些分上中下三集的复杂菜谱。</p>
+          </div>
+        </section>
+
+        <!-- 板块7：FAQ -->
+        <section id="faq">
+          <div class="section-header">
+            <h2>常见问题</h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>生活记录类视频一般多长比较合适？</summary>
+              <p>6 到 10 分钟是常见区间。低于 4 分钟很难展开一个完整事件，超过 15 分钟如果没有明确的主线，完播率会明显下降。县城书店系列定在 6 到 8 分钟，每集只讲一件事，比如“搭书墙”或“试营业第一天的客流”。</p>
+            </details>
+            <details>
+              <summary>微短剧一集 2 分钟，能讲清楚一个故事吗？</summary>
+              <p>能，但需要把叙事压缩到一个场景和一个冲突点。《合租日记》第 1 集只用了一个厨房场景，冲突是“谁动了我的鸡蛋”，从铺垫到解决一共 1 分 50 秒。超过两个场景或两个冲突，2 分钟就会显得赶。</p>
+            </details>
+            <details>
+              <summary>手工教程里没写尺寸，还能跟着做吗？</summary>
+              <p>难度很大。竹编灯罩第 3 集标注了主篾 1.2 毫米、纬篾 0.8 毫米，有观众按这个尺寸复刻成功并在评论区晒图。没有尺寸的教程只能看个大概流程，实际动手时卡在第一步破篾的人不在少数。</p>
+            </details>
+            <details>
+              <summary>为什么美食视频的收藏比点赞多？</summary>
+              <p>观众把视频当成菜谱存起来，方便以后翻出来照着做。砂锅焗鸡腿收藏 3.4k、点赞 2.9k，差了 500 次。对比剧情短片《归途2026》点赞 4.2k、收藏 1.1k，方向正好相反。</p>
+            </details>
+            <details>
+              <summary>滇藏线骑行视频里提到的住宿价格准吗？</summary>
+              <p>视频里标注的是 11 月 4 日盐井到芒康段的实际支付价格：床位 45 元、标间 120 元。作者在简介里注明“价格为当天实际支付，不保证长期有效”，10 月同期同路段床位约 38 元，涨幅约 18%。</p>
+            </details>
+            <details>
+              <summary>宠物类视频除了萌，还有什么看头？</summary>
+              <p>行为记录是一个方向。橘猫“年糕”开门系列记录了 6 天的学习过程，从试探到熟练，每天的变化都有具体时间点。这类内容的价值在于“可观察的行为变化”，比单纯的可爱片段多一层信息。</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- 板块8：用户评论 -->
+        <section id="comments">
+          <div class="section-header">
+            <h2>观众评论</h2>
+          </div>
+          <div class="comment-grid">
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">阿</span><span class="comment-name">阿哲不熬夜</span></div>
+              <p class="comment-text">《归途2026》里火车站那场戏，背景音里真的有一列火车进站，不是后期配的。阿凯在简介里说了，蹲了三个小时才录到。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">竹</span><span class="comment-name">竹篾新手</span></div>
+              <p class="comment-text">按老陈的尺寸买了篾条，1.2 毫米的主篾还是太粗，编起来手疼。评论区有人说先用 0.8 毫米练手，准备试试。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">一</span><span class="comment-name">一人食小张</span></div>
+              <p class="comment-text">砂锅焗鸡腿做了两次，第一次火大了皮焦了，第二次按视频里的 200 度 25 分钟正好。交作业在评论区，翻到第 4 页。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">合</span><span class="comment-name">合租受害者</span></div>
+              <p class="comment-text">《合租日记》第 4 集确实有点水，洗碗排班表这个梗第 2 集已经用过了，又来一遍就没意思了。第 5 集拉回来了。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">骑</span><span class="comment-name">骑不动了</span></div>
+              <p class="comment-text">滇藏线那个碎石路 34 公里，作者骑了 5 个小时，我去年骑了 7 个小时。他那个体力是真的好。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">年</span><span class="comment-name">年糕的邻居</span></div>
+              <p class="comment-text">橘猫开门那个，第 4 天它已经会压门把手了，我家那只学了两个月还在拍门。猫和猫的差距比人和人还大。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">县</span><span class="comment-name">县城读者</span></div>
+              <p class="comment-text">书店那个书墙 3000 元不到，我照着买了同样的板材，本地建材市场报价 3200，差在油漆上。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">夜</span><span class="comment-name">夜班常客</span></div>
+              <p class="comment-text">《夜班便利店》比《合租日记》好看，每集结尾都留一个钩子，第 3 集那个客人一进门就知道有故事。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">手</span><span class="comment-name">手工区常驻</span></div>
+              <p class="comment-text">工具评测那个合集里，刨刀对比那期说得很实在，直接给了三种价位的手感差异，没有废话。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">路</span><span class="comment-name">路过的</span></div>
+              <p class="comment-text">不太懂骑行，但滇藏线的风景是真的好看，第 13 天那个日照金山值了。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">小</span><span class="comment-name">小鹿的书粉</span></div>
+              <p class="comment-text">书店系列第 30 集播放掉到 9 万多我还担心不更了，第 47 集又拉回来了，果然还是得有干货。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">沉</span><span class="comment-name">沉浸式爱好者</span></div>
+              <p class="comment-text">无解说的烹饪视频确实舒服，但有些视频收音太差，锅铲声都糊了，还是得挑设备好一点的看。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">阿</span><span class="comment-name">阿凯的观众</span></div>
+              <p class="comment-text">《归途2026》调色偏暖，火车站那段有点晃，不过手持感正好符合返乡的匆忙。8 分钟有点短，希望有长版。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">等</span><span class="comment-name">等等再说</span></div>
+              <p class="comment-text">收藏夹里全是美食视频，一个都没做过。别问了。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">建</span><span class="comment-name">建材老李</span></div>
+              <p class="comment-text">书墙那个角铁规格视频里写的是 30×30，我店里卖 28 元一根，他那个价格是批发价。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 板块9：相关资讯 -->
+        <section id="news">
+          <div class="section-header">
+            <h2>相关资讯</h2>
+          </div>
+          <div class="news-list">
+            <div class="news-item">
+              <img src="https://picsum.photos/seed/news1/600/400" alt="微短剧拍摄现场" width="600" height="400" loading="lazy">
+              <div class="news-content">
+                <span class="news-date">2026-11-06</span>
+                <div class="news-title">《合租日记》第一季收官，第二季剧本已进入围读阶段</div>
+                <div class="news-summary">导演在 11 月 6 日的直播中透露，第二季共 8 集，预计 12 月中旬开拍，原班人马回归，新增一位合租室友角色。</div>
+              </div>
+            </div>
+            <div class="news-item">
+              <img src="https://picsum.photos/seed/news2/600/400" alt="竹编工具特写" width="600" height="400" loading="lazy">
+              <div class="news-content">
+                <span class="news-date">2026-11-05</span>
+                <div class="news-title">竹编灯罩系列带动篾条销量，泸州一家竹材店单周卖出 400 把篾刀</div>
+                <div class="news-summary">店家在 11 月 5 日接受电话采访时说，过去一周篾刀销量是平时的 6 倍，主篾 1.2 毫米规格的竹条已经断货。</div>
+              </div>
+            </div>
+            <div class="news-item">
+              <img src="https://picsum.photos/seed/news3/600/400" alt="滇藏线公路风景" width="600" height="400" loading="lazy">
+              <div class="news-content">
+                <span class="news-date">2026-11-04</span>
+                <div class="news-title">滇藏线盐井至芒康段 11 月起进入冬季管制，骑行视频作者提醒提前查路况</div>
+                <div class="news-summary">该段公路养护站 11 月 4 日发布通知，部分垭口路段每日 17 时后禁止通行，作者在最新一集里把管制时间写进了简介。</div>
+              </div>
+            </div>
+            <div class="news-item">
+              <img src="https://picsum.photos/seed/news4/600/400" alt="手机剪辑界面" width="600" height="400" loading="lazy">
+              <div class="news-content">
+                <span class="news-date">2026-11-03</span>
+                <div class="news-title">手机剪辑软件剪映新增“对白字幕自动断句”功能，自制短片后期效率提升</div>
+                <div class="news-summary">11 月 3 日推送的 8.2 版本更新中，该功能支持中文对白自动按语义断句，实测 3 分钟短片的字幕制作时间从 40 分钟降到 12 分钟。</div>
+              </div>
+            </div>
+            <div class="news-item">
+              <img src="https://picsum.photos/seed/news5/600/400" alt="书店内景" width="600" height="400" loading="lazy">
+              <div class="news-content">
+                <span class="news-date">2026-11-02</span>
+                <div class="news-title">县城书店系列第 47 天视频登上生活记录榜第 6 位，店主称下集讲选品</div>
+                <div class="news-summary">该条视频在 11 月 2 日进入生活记录周榜第 6 名，店主小鹿在评论区回复：下集讲怎么用 5000 元进第一批书。</div>
+              </div>
+            </div>
+            <div class="news-item">
+              <img src="https://picsum.photos/seed/news6/600/400" alt="宠物行为记录" width="600" height="400" loading="lazy">
+              <div class="news-content">
+                <span class="news-date">2026-10-31</span>
+                <div class="news-title">橘猫“年糕”开门视频被宠物行为博主转发，讨论猫的学习能力边界</div>
+                <div class="news-summary">10 月 31 日，一位粉丝 12 万的宠物行为博主转发该视频并补充：猫压门把手属于操作条件反射，6 天学会属于中上水平。</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 板块10：相关推荐 -->
+        <section id="tags">
+          <div class="section-header">
+            <h2>相关推荐方向</h2>
+          </div>
+          <div class="tag-cloud">
+            <a href="#featured">微短剧合集</a>
+            <a href="#featured">竹编入门教程</a>
+            <a href="#featured">一人食菜谱</a>
+            <a href="#featured">滇藏线路书</a>
+            <a href="#featured">县城创业记录</a>
+            <a href="#featured">宠物行为观察</a>
+            <a href="#featured">无解说手工</a>
+            <a href="#featured">沉浸式烹饪</a>
+          </div>
+        </section>
+
+        <!-- 板块11：补充板块 - 创作者证言 -->
+        <section id="testimonials">
+          <div class="section-header">
+            <h2>创作者说</h2>
+          </div>
+          <div class="testimonial-grid">
+            <div class="testimonial">
+              <p>“篾条泡水的时间比教程里写的多 30 秒，编起来会软很多。这是我自己试了十几次才摸出来的，视频里没讲。”——竹编灯罩系列创作者 老陈</p>
+              <div class="author">陈师傅 · 泸州 · 手工区创作者</div>
+            </div>
+            <div class="testimonial">
+              <p>“第 4 集确实收得急了，第二季会把合租矛盾集中在一条线上，不再每集换新问题。”——《合租日记》导演 林一舟</p>
+              <div class="author">林一舟 · 剧情短片创作者</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 板块12：补充板块 - 热门榜单（简短） -->
+        <section id="hot-rank">
+          <div class="section-header">
+            <h2>本周热门条目</h2>
+          </div>
+          <div class="update-list" style="gap: 10px;">
+            <div class="update-item" style="padding: 12px 16px;">
+              <span class="date-badge" style="background: var(--brand-dark);">1</span>
+              <div class="update-content"><div class="update-title">《合租日记》第 5 集</div><div class="update-summary">播放 42.1 万 · 评论 1.2k · 11月5日更新</div></div>
+            </div>
+            <div class="update-item" style="padding: 12px 16px;">
+              <span class="date-badge" style="background: var(--brand-dark);">2</span>
+              <div class="update-content"><div class="update-title">竹编灯罩第 3 集</div><div class="update-summary">收藏 2.1k · 点赞 1.8k · 11月6日更新</div></div>
+            </div>
+            <div class="update-item" style="padding: 12px 16px;">
+              <span class="date-badge" style="background: var(--brand-dark);">3</span>
+              <div class="update-content"><div class="update-title">砂锅焗鸡腿</div><div class="update-summary">收藏 3.4k · 交作业 87 条 · 11月5日更新</div></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 右辅助栏 -->
+      <aside class="secondary-sidebar">
+        <div class="side-card">
+          <h3>今日热榜</h3>
+          <ul class="hot-list">
+            <li><span class="rank">1</span><div><a href="#featured" class="hot-title">合租日记 第5集</a><span class="hot-meta">播放 42.1w</span></div></li>
+            <li><span class="rank">2</span><div><a href="#featured" class="hot-title">竹编灯罩 第3集</a><span class="hot-meta">收藏 2.1k</span></div></li>
+            <li><span class="rank">3</span><div><a href="#featured" class="hot-title">砂锅焗鸡腿</a><span class="hot-meta">收藏 3.4k</span></div></li>
+            <li><span class="rank">4</span><div><a href="#featured" class="hot-title">归途2026</a><span class="hot-meta">评分 8.7</span></div></li>
+            <li><span class="rank">5</span><div><a href="#featured" class="hot-title">县城书店第47天</a><span class="hot-meta">播放 12.4w</span></div></li>
+            <li><span class="rank">6</span><div><a href="#featured" class="hot-title">橘猫年糕开门</a><span class="hot-meta">点赞 3.8k</span></div></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>最近更新</h3>
+          <ul class="hot-list">
+            <li><span class="rank" style="font-size: 12px; color: var(--text-tertiary);">11-07</span><div><a href="#latest" class="hot-title">归途2026 上线</a></div></li>
+            <li><span class="rank" style="font-size: 12px; color: var(--text-tertiary);">11-07</span><div><a href="#latest" class="hot-title">竹编灯罩 第3集</a></div></li>
+            <li><span class="rank" style="font-size: 12px; color: var(--text-tertiary);">11-06</span><div><a href="#latest" class="hot-title">合租日记 第6集</a></div></li>
+            <li><span class="rank" style="font-size: 12px; color: var(--text-tertiary);">11-05</span><div><a href="#latest" class="hot-title">沉浸式烹饪新增</a></div></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>投稿与互动</h3>
+          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.6;">你也有自制视频想展示？欢迎上传作品，参与每月“最佳生活记录”评选。</p>
+          <button class="btn-primary" style="width: 100%; padding: 8px 0; font-size: 14px;" onclick="alert('投稿入口示例：上传你的自制视频')">上传作品</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">91 chinese homemade video</div>
+        <p class="footer-desc">记录 2026 年 9 月至 11 月的中文自制视频动态，涵盖生活记录、剧情短片、手工制作、美食烹饪等类型，每日更新条目与创作者访谈。</p>
+      </div>
+      <div class="footer-col">
+        <h4>探索类型</h4>
+        <a href="#featured">生活记录</a>
+        <a href="#featured">剧情短片</a>
+        <a href="#featured">手工制作</a>
+        <a href="#featured">美食烹饪</a>
+      </div>
+      <div class="footer-col">
+        <h4>热门条目</h4>
+        <a href="#featured">合租日记</a>
+        <a href="#featured">竹编灯罩</a>
+        <a href="#featured">归途2026</a>
+        <a href="#featured">滇藏线骑行</a>
+      </div>
+      <div class="footer-col">
+        <h4>互动</h4>
+        <a href="#" onclick="alert('投稿入口示例'); return false;">投稿</a>
+        <a href="#" onclick="alert('上传入口示例'); return false;">上传作品</a>
+        <a href="#comments">评论交流</a>
+        <a href="#faq">常见问题</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 91 chinese homemade video · 内容聚合示例</span>
+      <span>页面更新时间：2026年11月8日 · 对应条目：归途2026、竹编灯罩第3集、合租日记第6集</span>
+    </div>
+  </footer>
+
+  <!-- 回到顶部按钮 -->
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+  <!-- 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "91 chinese homemade video",
+    "description": "汇聚中文自制视频的精选条目、最新动态、分类入口与深度解析，涵盖生活记录、剧情短片、手工制作等方向。",
+    "url": "https://example.com/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "生活记录类视频一般多长比较合适？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "6 到 10 分钟是常见区间。低于 4 分钟很难展开一个完整事件，超过 15 分钟如果没有明确的主线，完播率会明显下降。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "微短剧一集 2 分钟，能讲清楚一个故事吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "能，但需要把叙事压缩到一个场景和一个冲突点。超过两个场景或两个冲突，2 分钟就会显得赶。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "手工教程里没写尺寸，还能跟着做吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "难度很大。没有尺寸的教程只能看个大概流程，实际动手时容易卡在第一步。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "为什么美食视频的收藏比点赞多？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "观众把视频当成菜谱存起来，方便以后翻出来照着做。砂锅焗鸡腿收藏 3.4k、点赞 2.9k，收藏高于点赞。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "滇藏线骑行视频里提到的住宿价格准吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "视频里标注的是 11 月 4 日盐井到芒康段的实际支付价格：床位 45 元、标间 120 元。作者注明价格为当天实际支付，不保证长期有效。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "宠物类视频除了萌，还有什么看头？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "行为记录是一个方向。橘猫开门系列记录了 6 天的学习过程，每天的变化都有具体时间点，比单纯的可爱片段多一层信息。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    (function() {
+      // 回到顶部
+      const backBtn = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 600) {
+          backBtn.classList.add('visible');
+        } else {
+          backBtn.classList.remove('visible');
+        }
+      });
+      backBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 移动端导航
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      const overlay = document.getElementById('overlay');
+      const closeNav = document.getElementById('closeNav');
+
+      function openNav() {
+        mobileNav.classList.add('open');
+        overlay.classList.add('open');
+        menuToggle.setAttribute('aria-expanded', 'true');
+      }
+      function closeNavFn() {
+        mobileNav.classList.remove('open');
+        overlay.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+
+      menuToggle.addEventListener('click', function() {
+        if (mobileNav.classList.contains('open')) {
+          closeNavFn();
+        } else {
+          openNav();
+        }
+      });
+      overlay.addEventListener('click', closeNavFn);
+      closeNav.addEventListener('click', closeNavFn);
+
+      // 点击移动导航链接后关闭
+      document.querySelectorAll('.mobile-nav a').forEach(link => {
+        link.addEventListener('click', closeNavFn);
+      });
+
+      // Esc 关闭
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+          closeNavFn();
+        }
+      });
+
+      // 侧栏导航高亮（简单实现）
+      const channelLinks = document.querySelectorAll('.channel-list a');
+      const sections = document.querySelectorAll('section[id]');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            channelLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === '#' + entry.target.id) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, { rootMargin: '-30% 0px -60% 0px' });
+      sections.forEach(section => observer.observe(section));
+    })();
+  </script>
+</body>
+                </html>
